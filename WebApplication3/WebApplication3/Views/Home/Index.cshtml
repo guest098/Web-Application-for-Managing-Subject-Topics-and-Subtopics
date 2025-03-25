@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Subject & Subtopic Management";
+}
+
+<h2 class="text-center">Subject & Subtopic Management</h2>
+
+<button class="btn btn-primary mb-3" onclick="showSubjectForm()">Add Subject</button>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>S.No</th>
+            <th>Topic Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="subjectTableBody">
+    </tbody>
+</table>
+
+<div id="subtopicsSection" style="display: none;">
+    <h4>Subtopics for <span id="selectedTopic"></span></h4>
+    <button class="btn btn-primary mb-3" onclick="showSubtopicForm()">Add Subtopic</button>
+
+    <table class="table table-bordered">
+        <thead class="table-secondary">
+            <tr>
+                <th>S.No</th>
+                <th>Subtopic Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="subtopicTableBody">
+        </tbody>
+    </table>
+</div>
+
+<div id="subjectForm" class="mt-4" style="display: none;">
+    <h5>Add / Edit Subject</h5>
+    <input type="hidden" id="subjectId">
+    <input type="text" id="subjectName" class="form-control mb-2" placeholder="Enter Subject Name">
+    <input type="text" id="subjectDescription" class="form-control mb-2" placeholder="Enter Description">
+    <button class="btn btn-success" onclick="saveSubject()">Save</button>
+    <button class="btn btn-secondary" onclick="hideSubjectForm()">Cancel</button>
+</div>
+
+<div id="subtopicForm" class="mt-4" style="display: none;">
+    <h5>Add / Edit Subtopic</h5>
+    <input type="hidden" id="subtopicId">
+    <input type="text" id="subtopicName" class="form-control mb-2" placeholder="Enter Subtopic Name">
+    <input type="text" id="subtopicDescription" class="form-control mb-2" placeholder="Enter Description">
+    <button class="btn btn-success" onclick="saveSubtopic()">Save</button>
+    <button class="btn btn-secondary" onclick="hideSubtopicForm()">Cancel</button>
+</div>
