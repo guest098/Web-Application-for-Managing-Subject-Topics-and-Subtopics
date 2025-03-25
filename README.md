@@ -67,3 +67,8 @@ User-friendly UI with animations and modern design
 
 AJAX API Requests to interact with the backend without page reloads
 
+
+Output of My Project video is availble here
+
+https://console.cloudinary.com/video/c-890de3d1b0daae69162fa20ff504ee/media_library/search/asset/b9843bb6e339ccd574c66882f9b70753/video?q=&view_mode=mosaic
+
